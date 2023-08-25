@@ -1,0 +1,15 @@
+{
+    "name": "m2/url-parser",
+    "autoload": {
+        "psr-4": {
+            "UrlParser\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Mathias Mantai",
+            "email": "mmantaibusiness@gmail.com"
+        }
+    ],
+    "require": {}
+}
