@@ -1,11 +1,13 @@
 <?php
-
 namespace UrlParser;
+
+use UrlParser\InvalidCrudOperationException;
+use UrlParser\InvalidUrlException;
+use UrlParser\Router;
 
 class UrlParser 
 {
-
-    public function parseUrl(string $url) 
+    public function parseUrl(string $url, Router $router) 
     {
         $parsedUrl = parse_url($url);
 
@@ -14,7 +16,9 @@ class UrlParser
             return false;
         }
 
-        return $parsedUrl;
+        $res = $this->parseUrlPath($parsedUrl);
+        $res2 = $this->validateUrlPath($res);
+        return $res2;
     }
 
     public function tryParseUrl(string $url)
@@ -28,6 +32,30 @@ class UrlParser
 
         return true;
     }
-}
 
-https://github.com/MathiasMantai/url-parser.git
+    private function parseUrlPath(array $parsedUrl): array|string
+    {
+        $path = $parsedUrl["path"];
+
+        $pathComponents = explode("/", $path);
+
+        if(gettype($pathComponents) != "array")
+        {
+            throw new InvalidUrlException();
+        }
+
+        array_shift($pathComponents);
+
+        return $pathComponents;
+    }
+
+    private function validateUrlPath(array $pathComponents)
+    {
+        //check if the operation is valid
+        $operation = $pathComponents[0];
+        if(!in_array(strtoupper($operation), ["CREATE", "READ", "UPDATE", "DELETE"]))
+        {
+            throw new InvalidCrudOperationException();
+        }
+    }
+}
