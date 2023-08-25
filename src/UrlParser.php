@@ -1,8 +1,8 @@
 <?php
 namespace M2\WebRouter;
 
-use M2\WebRouter\InvalidCrudOperationException;
-use M2\WebRouter\InvalidUrlException;
+use M2\WebRouter\Exception\InvalidCrudOperationException;
+use M2\WebRouter\Exception\InvalidUrlException;
 use M2\WebRouter\Router;
 
 class UrlParser 

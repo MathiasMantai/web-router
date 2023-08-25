@@ -2,7 +2,7 @@
 
 namespace M2\WebRouter;
 
-use M2\WebRouter\RouteNotFoundException;
+use M2\WebRouter\Exception\RouteNotFoundException;
 
 class Router 
 {

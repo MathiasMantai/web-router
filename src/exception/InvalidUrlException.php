@@ -1,6 +1,6 @@
 <?php
 
-namespace M2\WebRouter;
+namespace M2\WebRouter\Exception;
 use Exception;
 use Throwable;
 
