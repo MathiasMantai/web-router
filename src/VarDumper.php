@@ -2,14 +2,12 @@
 
 namespace UrlParser;
 
-class ArrayDumper 
+class VarDumper 
 {
-    public static function dumpArray(array $array)
+    public static function dumpVar(string|float|array|bool|null $var)
     {
         print '<pre style="font-size: 15px;">';
-        var_dump($array); 
+        var_dump($var); 
         print '</pre>';
     }
-
-    
 }
