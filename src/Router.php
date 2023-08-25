@@ -1,8 +1,8 @@
 <?php
 
-namespace UrlParser;
+namespace M2\WebRouter;
 
-use UrlParser\RouteNotFoundException;
+use M2\WebRouter\RouteNotFoundException;
 
 class Router 
 {

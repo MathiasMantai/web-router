@@ -2,7 +2,7 @@
     "name": "m2/url-parser",
     "autoload": {
         "psr-4": {
-            "UrlParser\\": "src/"
+            "M2\\WebRouter\\": "src/"
         }
     },
     "authors": [

@@ -1,6 +1,6 @@
 <?php
 
-namespace UrlParser;
+namespace M2\WebRouter;
 
 class VarDumper 
 {
