@@ -1,6 +1,6 @@
 <?php
 
-namespace M2\WebRouter;
+namespace MMantai\WebRouter;
 
 class VarDumper 
 {

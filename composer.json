@@ -1,8 +1,8 @@
 {
-    "name": "m2/url-parser",
+    "name": "mmantai/web-router",
     "autoload": {
         "psr-4": {
-            "M2\\WebRouter\\": "src/"
+            "MMantai\\WebRouter\\": "src/"
         }
     },
     "authors": [

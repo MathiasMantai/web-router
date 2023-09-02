@@ -1,8 +1,8 @@
 <?php
 
-namespace M2\WebRouter;
+namespace MMantai\WebRouter;
 
-use M2\WebRouter\Exception\RouteNotFoundException;
+use MMantai\WebRouter\Exception\RouteNotFoundException;
 
 class Router 
 {

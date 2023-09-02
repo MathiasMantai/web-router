@@ -1,9 +1,9 @@
 <?php
-namespace M2\WebRouter;
+namespace MMantai\WebRouter;
 
-use M2\WebRouter\Exception\InvalidCrudOperationException;
-use M2\WebRouter\Exception\InvalidUrlException;
-use M2\WebRouter\Router;
+use MMantai\WebRouter\Exception\InvalidCrudOperationException;
+use MMantai\WebRouter\Exception\InvalidUrlException;
+use MMantai\WebRouter\Router;
 
 class UrlParser 
 {
