@@ -9,6 +9,12 @@ class Router
     
     public array $RouteCollection;
 
+    public function start()
+    {
+        $path = (parse_url($_SERVER['REQUEST_URI']))["path"];
+        $this->executeRoute($path);
+    }
+
     public function registerRoute(string $route, callable $callback): void
     {   
         $parsedRoute = $this->parseRoute($route);
@@ -34,7 +40,7 @@ class Router
         }
         else
         {
-            throw new RouteNotFoundException();
+            throw new RouteNotFoundException;
         }
     }
 
