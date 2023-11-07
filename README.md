@@ -15,3 +15,6 @@ $router->registerRoute("/site/{var}", function ($var) {
 
 $router->start();
 ```
+
+## TODO
+- Middleware support for routes
