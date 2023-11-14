@@ -2,7 +2,7 @@
     "name": "mmantai/web-router",
     "autoload": {
         "psr-4": {
-            "MMantai\\WebRouter\\": "src/"
+            "Mmantai\\WebRouter\\": "src/"
         }
     },
     "authors": [
